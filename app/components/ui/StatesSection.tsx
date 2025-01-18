@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const StatsSection = () => {
     const stats = [
         { data: "35K", title: "Customers" },
@@ -10,7 +12,7 @@ const StatsSection = () => {
         <section className="py-28">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
                 <div className="sm:hidden lg:block lg:max-w-xl">
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                         className="rounded-lg"
                         alt="Image"
