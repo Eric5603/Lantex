@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 interface NavigationItem {
     title: string;
@@ -41,7 +42,7 @@ const Navbar: React.FC = () => {
             <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
                 <div className="flex items-center justify-between py-5 md:block">
                     <Link href="/" className="text-3xl text-gray-800 font-bold">
-                        <img
+                        <Image
                             src="/blinder.svg"
                             width={120}
                             height={50}
