@@ -1,0 +1,11 @@
+[build]
+  # Command to build your Next.js app
+  command = "npm run build"
+  # Directory to publish after build
+  publish = ".next"
+
+[[redirects]]
+  # Redirect all routes to support client-side navigation
+  from = "/*"
+  to = "/"
+  status = 200
