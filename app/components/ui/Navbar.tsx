@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface NavigationItem {
     title: string;
@@ -39,14 +40,14 @@ const Navbar: React.FC = () => {
         >
             <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
                 <div className="flex items-center justify-between py-5 md:block">
-                    <a href="/" className="text-3xl text-gray-800 font-bold">
-                    <img
-                        src="/blinder.svg"
-                        width={120}
-                        height={50}
-                        alt="Blinder "
-                    /> 
-                    </a>
+                    <Link href="/" className="text-3xl text-gray-800 font-bold">
+                        <img
+                            src="/blinder.svg"
+                            width={120}
+                            height={50}
+                            alt="Blinder"
+                        />
+                    </Link>
                     <div className="md:hidden">
                         <button
                             className="menu-btn text-gray-500 hover:text-gray-800"
@@ -92,17 +93,16 @@ const Navbar: React.FC = () => {
                     <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                         {navigation.map((item, idx) => (
                             <li key={idx} className="text-gray-700 hover:text-gray-900">
-                                <a href={item.path} className="block">
+                                <Link href={item.path} className="block">
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
                     <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
-                        
-                        <a
+                        <Link
                             href="/sign-up"
-                            className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg  md:inline-flex"
+                            className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg md:inline-flex"
                         >
                             Let's work 
                             <svg
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

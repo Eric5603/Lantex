@@ -3,7 +3,7 @@ import Features from "./components/ui/Feature";
 import CTA from "./components/ui/CTA";
 import LogoGrid from "./components/ui/LogoGrid";
 import Testimonials from "./components/ui/Testimonial";
-import Banner from "./components/ui/Banner";
+import StatesSection from "./components/ui/StatesSection";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
           <Hero />
           <LogoGrid/>
           <Features />
-          <Banner/>
+          <StatesSection/>
           <Testimonials/>
           <CTA />
           
